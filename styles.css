@@ -1,0 +1,139 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+
+
+#hero{
+    position: relative;
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/istockphoto-95231510-612x612.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(50%);
+}
+
+
+
+#hero_content{
+    position: absolute;
+
+}
+#hero_content h2 span{
+    color: orange;
+}
+
+#hero_content h1{
+    color: orange;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 2px #000;
+}
+#hero_content h2{
+    color: white;
+    font-size: 2.8rem;
+    font-family: cursive;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+#hero_content a{
+    color: #fff;
+    padding: 3px 20px 3px 20px;
+    border: 1px solid orange;
+    background: rgb(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+#hero_content a:hover{
+    background: orange;
+}
+
+
+@media screen and (max-width :770px) {
+    #header{
+        position: absolute;
+    }
+    #main{
+        display: none;
+    }
+    #table, th, td{
+        display: block;
+    }
+    html{
+        font-size: 85%;
+    }
+    #table{
+        flex-wrap: wrap;
+        padding: 0 10px 0 10px;
+    }
+    #main{
+        flex-wrap: wrap;
+        padding: 0 10px 0 10px;
+    }
+
+}
+@media screen and (max-width :300px){
+     html{
+        font-size: 60%;
+     }
+}
+
+
+
+   
+#footer{
+
+    background-color: #292929;
+    padding: 20px;
+    position: relative;
+}
+
+#footer h5{
+    text-align: center;
+    color: orange;
+}
+
+#footer h5 a{
+    color: black;
+    text-decoration: none;
+}
+#top{
+    position: relative;
+    bottom: 12px;
+    right: 12px;
+}
+#top a{
+    color: black;
+    font-size: 1.rem;
+}
+
+ 

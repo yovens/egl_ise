@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+    
+
+
+header {
+    background-color: #333;
+    background-color :orange;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+@media screen and (max-width :770px) {
+    #header{
+        position: absolute;
+    }
+    #main{
+        display: none;
+    }
+    #table, th, td{
+        display: block;
+    }
+    html{
+        font-size: 85%;
+    }
+    #table{
+        flex-wrap: wrap;
+        padding: 0 10px 0 10px;
+    }
+    #main{
+        flex-wrap: wrap;
+        padding: 0 10px 0 10px;
+    }
+
+}
+@media screen and (max-width :300px){
+     html{
+        font-size: 60%;
+     }
+}
+
+
+
+    
+#footer{
+    background-color: #292929;
+    padding: 20px;
+    position: relative;
+}
+
+#footer h5{
+    text-align: center;
+    color: orange;
+}
+
+#footer h5 a{
+    color: white;
+    text-decoration: none;
+}
+#top{
+    position: relative;
+    bottom: 12px;
+    right: 12px;
+}
+#top a{
+    color: black;
+    font-size: 1.rem;
+}
+
